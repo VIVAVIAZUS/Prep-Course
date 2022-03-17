@@ -191,43 +191,129 @@
 // var integers = [100, 4, 56, 78, 200, 120, 7, 160, 148, 22];
 // console.log(mayorACien(integers));
 
-function breakStatement(numero) {
-    //Iterar en un bucle aumentando en 2 el numero recibido hasta un límite de 10 veces.
-    //Guardar cada nuevo valor en un array. 
-    //Devolver el array
-    //Si en algún momento el valor de la suma y la cantidad de iteraciones coinciden, debe interrumpirse la ejecución y 
-    //devolver: "Se interrumpió la ejecución"
-    //Pista: usá el statement 'break'
-    // Tu código:
-    let incremento = [numero];
+// function breakStatement(numero) {
+//     //Iterar en un bucle aumentando en 2 el numero recibido hasta un límite de 10 veces.
+//     //Guardar cada nuevo valor en un array. 
+//     //Devolver el array
+//     //Si en algún momento el valor de la suma y la cantidad de iteraciones coinciden, debe interrumpirse la ejecución y 
+//     //devolver: "Se interrumpió la ejecución"
+//     //Pista: usá el statement 'break'
+//     // Tu código:
+//     let incremento = [numero];
 
-    for (let i = 0; i < 10; i++) {
-        numero = numero + 2;
-        if (i === numero) { "Se interrumpió la ejecución" }
-        incremento.push(numero);
-    }
-    return incremento;
-}
+//     for (let i = 0; i < 10; i++) {
+//         numero = numero + 2;
+//         if (i === numero) { "Se interrumpió la ejecución" }
+//         incremento.push(numero);
+//     }
+//     return incremento;
+// }
 
-console.log(breakStatement(50));
-console.log(breakStatement(-4));
+// console.log(breakStatement(50));
+// console.log(breakStatement(-4));
 
-function continueStatement(numero) {
-    //Iterar en un bucle aumentando en 2 el numero recibido hasta un límite de 10 veces.
-    //Guardar cada nuevo valor en un array.    
-    //Devolver el array
-    //Cuando el número de iteraciones alcance el valor 5, no se suma en ese caso y se continua con la siguiente iteración
-    //Pista: usá el statement 'continue'
-    // Tu código:
-    let incrementoMenosCinco = [numero];
-    for (let i = 0; i < 10; i++) {
-        if (i !== 5) {
-            numero = numero + 2;
-            incrementoMenosCinco.push(numero);
-        }
-    }
-    return incrementoMenosCinco;
-}
+// function continueStatement(numero) {
+//     //Iterar en un bucle aumentando en 2 el numero recibido hasta un límite de 10 veces.
+//     //Guardar cada nuevo valor en un array.    
+//     //Devolver el array
+//     //Cuando el número de iteraciones alcance el valor 5, no se suma en ese caso y se continua con la siguiente iteración
+//     //Pista: usá el statement 'continue'
+//     // Tu código:
+//     let incrementoMenosCinco = [numero];
+//     for (let i = 0; i < 10; i++) {
+//         if (i !== 5) {
+//             numero = numero + 2;
+//             incrementoMenosCinco.push(numero);
+//         }
+//     }
+//     return incrementoMenosCinco;
+// }
 
-console.log(continueStatement(50));
-console.log(continueStatement(-4));
+// console.log(continueStatement(50));
+// console.log(continueStatement(-4));
+
+// const user = {
+//     usernombre: 'Jhon Doe',
+//     password: 'JavaScript es genial!',
+//     posts: [
+//       {
+//         id: '1',
+//         title: 'Aventuras en JS!',
+//         likes: 10
+//       },
+//       {
+//         id: '2',
+//         title: 'Soy Henry!',
+//         likes: 100
+//       },
+//       {
+//         id: '3',
+//         title: 'Qué es un JavaScript?',
+//         likes: 35
+//       },
+//       {
+//         id: '4',
+//         title: 'JS Objects for Dummies',
+//         likes: 42
+//       },
+//       {
+//         id: '5',
+//         title: 'Educación online',
+//         likes: 99
+//       },
+//     ],
+//   };
+
+
+
+//   function sumarLikesDeUsuario(usuario) {
+//     // "usuario" tiene una propiedad llamada "posts" que es un array
+//     // "posts" es un array de objetos "post"
+//     // Cada objeto "post" tiene una propiedad llamada "likes" que es un entero (int/integer)
+//     // Suma todos los likes de todos los objetos "post"
+//     // Devuelve la suma
+//     // Tu código:
+//     let suma = 0;
+//     usuario['posts'].forEach(post => {
+//         console.log(post['likes']);
+//         suma = suma + post['likes'];
+//         console.log(suma);
+//     });
+//     return suma;
+// }
+
+// console.log(sumarLikesDeUsuario(user))
+
+// function agregarMetodoCalculoDescuento(producto) {
+//     // Agregar un método (función) al objeto "producto" llamado "calcularPrecioDescuento"
+//     // Este método debe multiplicar el "precio" del "producto" ("producto.precio" o "producto[precio]") y "porcentajeDeDescuento" para obtener el descuento
+//     // El método resta el descuento del precio y devuelve el precio con descuento
+//     // Devuelve el objeto "producto" al final de la función
+//     // Ejemplo:
+//     // producto.precio -> 20
+//     // producto.porcentajeDeDescuento -> 0.2 (o simplemente ".2")
+//     // producto.calcularPrecioDescuento() -> 20 - (20 * 0.2)
+//     // Tu código:
+//     producto.calcularPrecioDescuento = function() {
+//         return producto.precio - (producto.precio * producto.porcentajeDeDescuento);
+//     }
+//     return producto;
+// }
+
+// const storeItem = {
+//     precio: 80,
+//     porcentajeDeDescuento: 0.1,
+// };
+// const storeItem2 = {
+//     precio: 5,
+//     porcentajeDeDescuento: 0.5,
+// };
+// // console.log(agregarMetodoCalculoDescuento(storeItem));
+// // console.log(storeItem);
+// // console.log(storeItem.calcularPrecioDescuento());
+
+// console.log(agregarMetodoCalculoDescuento(storeItem).calcularPrecioDescuento)
+// console.log(agregarMetodoCalculoDescuento(storeItem2).calcularPrecioDescuento)
+
+// console.log(agregarMetodoCalculoDescuento(storeItem).calcularPrecioDescuento());
+// console.log(agregarMetodoCalculoDescuento(storeItem2).calcularPrecioDescuento());
