@@ -317,3 +317,36 @@
 
 // console.log(agregarMetodoCalculoDescuento(storeItem).calcularPrecioDescuento());
 // console.log(agregarMetodoCalculoDescuento(storeItem2).calcularPrecioDescuento());
+
+
+// String.prototype.reverse = function() {
+//     let reversa='';
+//     for(let i=this.length-1;i>=0;i--){
+//         reversa=reversa+this[i];
+//     }
+//     return reversa;
+// }
+
+// 'Hao'.reverse();
+
+class Persona {
+    constructor(nombre, apellido, edad, domicilio /*Escribir los argumentos que recibe el constructor*/ ) {
+        // Crea el constructor:
+        this.nombre = nombre;
+        this.apellido = apellido;
+        this.edad = edad;
+        this.domicilio = domicilio;
+    }
+    detalle = function(Persona) {
+        return {
+            Nombre: this.nombre,
+            Apellido: this.apellido,
+            Edad: this.edad,
+            Domicilio: this.domicilio
+        }
+    }
+}
+
+const Daniel = new Persona('Daniel', 'Viasus', '28', 'Bogota');
+
+console.log(Daniel.detalle());
