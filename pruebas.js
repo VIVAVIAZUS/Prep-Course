@@ -329,24 +329,67 @@
 
 // 'Hao'.reverse();
 
-class Persona {
-    constructor(nombre, apellido, edad, domicilio /*Escribir los argumentos que recibe el constructor*/ ) {
-        // Crea el constructor:
-        this.nombre = nombre;
-        this.apellido = apellido;
-        this.edad = edad;
-        this.domicilio = domicilio;
-    }
-    detalle = function(Persona) {
-        return {
-            Nombre: this.nombre,
-            Apellido: this.apellido,
-            Edad: this.edad,
-            Domicilio: this.domicilio
-        }
-    }
+// class Persona {
+//     constructor(nombre, apellido, edad, domicilio /*Escribir los argumentos que recibe el constructor*/ ) {
+//         // Crea el constructor:
+//         this.nombre = nombre;
+//         this.apellido = apellido;
+//         this.edad = edad;
+//         this.domicilio = domicilio;
+//     }
+//     detalle = function(Persona) {
+//         return {
+//             Nombre: this.nombre,
+//             Apellido: this.apellido,
+//             Edad: this.edad,
+//             Domicilio: this.domicilio
+//         }
+//     }
+// }
+
+// const Daniel = new Persona('Daniel', 'Viasus', '28', 'Bogota');
+
+// console.log(Daniel.detalle());
+
+// function mayuscula(nombre) {
+//     //La función recibe un nombre y debe devolver el mismo que recibe pero con su primer letra en mayúscula
+//     //ej: Recibe "mario" ----> Devuelve "Mario"
+//     //Tu código:
+//     let Nombre = nombre[0].toUpperCase();
+//     for (let i = 0; i <= nombre.length - 1; i++) {
+//         if (i !== 0) {
+//             Nombre = Nombre + nombre[i]
+//         }
+//     }
+
+//     return Nombre;
+// }
+
+// mayuscula('daniel')
+
+// function sumarArray(numeros, cb) {
+//     // Suma todos los números enteros (int/integers) de un array ("numeros")
+//     // Pasa el resultado a `cb`
+//     // No es necesario devolver nada
+//     //Tu código:
+//     let resultado = 0;
+//     numeros.map(function(suma){
+//         resultado = resultado + suma;
+//     })
+//     cb(resultado)
+//     return resultado
+// }
+
+
+// console.log(sumarArray([1,1,1,1,1,1,1,1,1,1]))
+
+var array = ['abajo', 'pera', 'escalera', 'alerta', 'indice', 'azteca', 'arbol', 'buzo'];
+
+function filter(array) {
+    //Filtrar todos los elementos del array que cozzmiencen con la letra "a".
+    //Devolver un nuevo array con los elementos que cumplen la condición
+    //Tu código:
+
+    return array.filter(palabra => palabra[0] === 'a');
 }
-
-const Daniel = new Persona('Daniel', 'Viasus', '28', 'Bogota');
-
-console.log(Daniel.detalle());
+console.log(filter(array))

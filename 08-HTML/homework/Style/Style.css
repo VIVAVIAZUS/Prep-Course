@@ -1,0 +1,50 @@
+body {
+    background-color: #2a9d8f;
+    background-image: url('https://www.molaunhuevo.com/wp-content/uploads/fondo-pokemon.jpg');
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    background-size: 100%;
+    background-attachment: fixed;
+}
+
+div {
+    text-align: center;
+}
+
+h1 {
+    color: #264653
+}
+
+img {
+    width: 400px;
+    height: auto;
+}
+
+#thirdDiv {
+    height: 600px;
+    width: 500px;
+    padding: 50px;
+    border-radius: 3%;
+    position: relative;
+    transform: translate(50%, 5%);
+}
+
+#spanId {
+    font-size: 18px;
+}
+
+ul {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+li {
+    font-size: 30px;
+}
+
+p {
+    color: #E76F51;
+}
